@@ -13,7 +13,7 @@ const SurveyQuestionList = () => {
         try {
           const response = await fetch('/api/questions');
           if (!response.ok) {
-            throw new Error('Response was not ok');
+            throw new Error('Error');
           }
     
           const result = (await response.json()) as SurveyQuestion[];
@@ -59,7 +59,7 @@ const SurveyQuestionList = () => {
       <div className="max-w-xl mx-auto p-4 bg-white shadow-md my-8 rounded">
         {questions.map((question) => (
           <div className="mb-8">
-              <h1 className={`text-2xl font-bold mb-4 ${question.isRequired ? 'text-red-500' : ''}`}>
+              <h1 className={`text-2xl font-bold mb-4 ${question.isRequired ? 'text-black' : ''}`}>
                 {question.question}
               </h1>
               <ul className="pl-0">
@@ -76,10 +76,10 @@ const SurveyQuestionList = () => {
                 </li>
               ))}
               </ul>
-              <hr className="my-8 border-t border-gray-300" /> 
+              <hr className="my-8 border-t border-black" /> 
           </div>     
         ))} 
-        <button onClick={submitAnswer} className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Send inn</button>
+        <button onClick={submitAnswer} className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Send inn svar</button>
       </div>
       );
     }

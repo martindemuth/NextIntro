@@ -4,16 +4,22 @@ import { NextResponse } from "next/server"
 
 const data: SurveyQuestion[] = [
     {
-      id: "qm1",
-      question: "Hvilken type universitetsutdanning forfølger du?",
+      id: "1",
+      question: "Hvor mye frukt spiser du om dagen",
       isRequired: true,
-      options: ["Dette er et svar", "Svar 2", "Svar 3"],
+      options: ["Mer enn 5", "3-5", "Mindre enn 3", "Jeg spiser ikke frukt"],
     },
     {
-        id: "qm2",
-        question: "Hvor mange timer bruker du daglig på skolearbeid?",
+        id: "2",
+        question: "Hva kan være grunne til at du evt spiser for lite frukt?",
         isRequired: false,
-        options: ["Mindre enn 1 time", "1-2 timer", "2-4 timer", "Mer enn 4 timer"],
+        options: ["Liker ikke", "For dyrt", "Har ikke tid", "Glemmer det"],
+    },
+    {
+        id: "3",
+        question: "Hva er din favoritt frukt?",
+        isRequired: false,
+        options: ["Banan", "Eple", "Kiwi", "Annet"],
     }
 ]
 
