@@ -1,4 +1,4 @@
-import { SurveyResponse } from "@/types"
+import { type SurveyResponse } from "@/types"
 import type { NextRequest } from "next/server"
 import { NextResponse } from "next/server"
 

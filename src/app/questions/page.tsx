@@ -1,6 +1,6 @@
 "use client"
-import Navbar from "@/components/Navbar";
-import SurveyQuestionList from "@/components/SurveyQuestionList";
+import Navbar from "@/components/Nav";
+import SurveyQuestionList from "@/components/SurveyQuestions";
 
 export default function Home() {
     return (
